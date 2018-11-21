@@ -2,42 +2,42 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class insect {
+class Insect {
 
-	char name;
-	double velocity;
-	double weight;
-  protected:
-	double lenght, wingSize;
-  public:
-	insect() {
+	char nameOfInsect;
+	double velocityOfInsect;
+	double weightOfInsect;
+protected:
+	double lengthOfInsect, wingSizeOfInsect;
+public:
+	Insect() {
 
 	}
-	insect(char Name, double Velocity, double Weight, double Lenght, double WingSize) {
-		name = Name;
-		velocity = Velocity;
-		weight = Weight;
-		lenght = Lenght;
-		wingSize = WingSize;
+	insect(char NameOfInsect, double VelocityOfInsect, double WeightOfInsect, double LengthOfInsect, double WingSizeOfInsect) {
+		nameOfInsect = NameOfInsect;
+		velocityOfInsect = VelocityOfInsect;
+		weightOfInsect = WeightOfInsect;
+		lenghtOfInsect = LenghtOfInsect;
+		wingSizeOfInsect = WingSizeOfInsect;
 	}
-	void getname() {
-		cout << name;
-		
+	void getName() {
+		cout << nameOfInsect;
+
 	}
-	void getvelocity() {
-		cout << " velocity=" << velocity;
-		
+	void getVelocity() {
+		cout << " velocity = " << velocityOfInsect;
+
 	}
-	void getweight() {
-		cout <<" weight="<< weight;
-		
+	void getWeight() {
+		cout <<" weight = "<< weightOfInsect;
+
 	}
-    void getlenght() {
-		   cout <<" lenght=" <<lenght;
+	void getLength() {
+		cout <<" length = " <<lenghtOfInsect;
 	}
-	void getwingSize() {
-		   cout <<" wingSize="<< wingSize << "\n";
+	void getWingSize() {
+		cout <<" wingSize = "<< wingSizeOfInsect << "\n";
 	}
- 
+
 
 };
